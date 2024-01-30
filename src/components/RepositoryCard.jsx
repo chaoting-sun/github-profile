@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { starIconURL, nestingIconURL, chieldAltIconURL } from "../assets";
+import { starIconURL, nestingIconURL, chieldAltIconURL } from "../../public/assets";
 import calculateDayRelativeToToday from "../utils/dayRelativeToToday";
 
 const ContentColor = `

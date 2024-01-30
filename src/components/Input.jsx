@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
-import { SearchURL } from "../assets";
+import { SearchURL } from "../../public/assets";
 
 const SearchBox = styled.div`
   width: 40%;

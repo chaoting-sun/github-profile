@@ -10,7 +10,7 @@ import Repository from "./components/Repository";
 import RepositoryCard from "./components/RepositoryCard";
 import Footer from "./components/Footer";
 import Input from "./components/Input";
-import { wallpaperURL } from "./assets";
+import { wallpaperURL } from "../public/assets";
 
 import { searchUser, searchRepositories } from "./Services/users";
 
