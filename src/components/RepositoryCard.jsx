@@ -59,10 +59,10 @@ const RepositoryCard = ({ repo, repoIndex, handleClickCard }) => {
       <CardTitle>{repo.name}</CardTitle>
       <CardDescription>{repo.description}</CardDescription>
       <CardTrend>
-        {repo.lincense ? (
+        {repo.license ? (
           <>
             <TrendIcon src={chieldAltIconURL} />
-            <TrendValue>MIT</TrendValue>
+            <TrendValue>{repo.license}</TrendValue>
           </>
         ) : null}
         <TrendIcon src={nestingIconURL} />
