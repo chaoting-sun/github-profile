@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "VITE_MODE=production vite",
-    "dev": "VITE_MODE=development vite",
+    "dev": "vite",
     "build": "rm -rf dist && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "VITE_MODE=production vite preview",
+    "preview": "VITE_MODE=development vite preview",
     "server": "json-server -p3001 --watch ./src/mock-backend/db.json"
   },
   "dependencies": {

@@ -11,6 +11,7 @@ import RepositoryCard from "./components/RepositoryCard";
 import Footer from "./components/Footer";
 import Input from "./components/Input";
 import wallpaperURL from "/assets/hero-image-github-profile.png";
+import githubIconURL from "/assets/github-icon.svg";
 
 import { searchUser, searchRepositories } from "./Services/users";
 
@@ -57,6 +58,7 @@ const App = () => {
 
   const SearchByUsername = (user) => {
     setUsername(user);
+    setViewAll(false);
   };
 
   const handleViewAll = () => {
@@ -112,13 +114,19 @@ const App = () => {
       ));
   };
 
+  // console.log(username);
+  // console.log(userInfo);
+  // console.log(repositories);
+
   return (
     <>
       <Input onInputChange={SearchByUsername} />
       <Wallpaper wallpaperURL={wallpaperURL} />
       <Main>
         <Profile>
-          <Avatar avatarURL={userInfo.avatarUrl} />
+          <Avatar
+            avatarURL={userInfo.avatarUrl ? userInfo.avatarUrl : githubIconURL}
+          />
           <ProfileCardContainer>
             <ProfileCard
               itemKey="Followers"

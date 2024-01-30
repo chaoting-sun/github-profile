@@ -1,20 +1,24 @@
 import axios from "axios";
 
-const mode = import.meta.env.VITE_MODE;
-const baseURL =
-  mode === "production" ? "https://api.github.com" : "http://localhost:3001";
+const productionMode = import.meta.env.PROD;
+
+console.log("Mode:", productionMode ? "production" : "development");
+
+const baseURL = productionMode
+  ? "https://api.github.com"
+  : "http://localhost:3001";
 
 const instance = axios.create({ baseURL: baseURL });
 
 const createURL = (username, searchType) => {
-  if (mode === "production" && searchType === "users") {
-    return `users/${username}`
-  } else if (mode === "production" && searchType === "repos") {
-    return `users/${username}/repos`
-  } else if (mode === "development" && searchType === "users") {
-    return `users_${username}`
+  if (productionMode && searchType === "users") {
+    return `users/${username}`;
+  } else if (productionMode && searchType === "repos") {
+    return `users/${username}/repos`;
+  } else if (!productionMode && searchType === "users") {
+    return `users_${username}`;
   } else {
-    return `repos_${username}`
+    return `repos_${username}`;
   }
 };
 
