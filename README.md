@@ -22,7 +22,8 @@ The **Github Profile** has the following function:
 - React
 - Material UI
 - styled components
-- json server
+- JSON Server
+- Axios
 - Vite
 
 ## Run Locally
