@@ -35,8 +35,8 @@ const InputBox = styled.input`
   background-color: var(--main-background-color);
 `
 
-const Input = ({ onInputChange }) => {
-  const [username, setUsername] = useState("");
+const Input = ({ initialUser, onInputChange }) => {
+  const [username, setUsername] = useState(initialUser);
   const inputRef = useRef(null);
 
   const handleChange = (e) => {

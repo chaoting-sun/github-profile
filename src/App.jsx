@@ -17,6 +17,8 @@ import { searchUser, searchRepositories } from "./Services/users";
 
 import "./App.css";
 
+const initialUser = "chaoting-sun";
+
 const Main = styled.div`
   width: 75%;
   min-width: 420px;
@@ -45,7 +47,7 @@ const ProfileCardContainer = styled.div`
 `;
 
 const App = () => {
-  const [username, setUsername] = useState("chaoting-sun");
+  const [username, setUsername] = useState(initialUser);
   const [repositories, setRepositories] = useState([]);
   const [viewAll, setViewAll] = useState(false);
   const [userInfo, setUserInfo] = useState({
@@ -120,7 +122,7 @@ const App = () => {
 
   return (
     <>
-      <Input onInputChange={SearchByUsername} />
+      <Input initialUser={initialUser} onInputChange={SearchByUsername} />
       <Wallpaper wallpaperURL={wallpaperURL} />
       <Main>
         <Profile>
