@@ -1,0 +1,106 @@
+{
+  "users_chaoting-sun": {
+    "username": "chaoting-sun",
+    "followers": 150,
+    "following": 583,
+    "location": "Kaohsiung, Taiwan",
+    "avatar_url": "https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  "users_harry-potter": {
+    "username": "Harry",
+    "followers": 345,
+    "following": 777,
+    "location": "San Francisco, America",
+    "avatar_url": "https://s.abcnews.com/images/US/HT_Capybaras_Fla2_MEM_160824_4x3_992.jpg"
+  },
+  "repos_chaoting-sun": [
+    {
+      "name": "repo-1",
+      "description": "An example repository 1",
+      "license": {
+        "name": "MIT License"
+      },
+      "forks_count": 42,
+      "stargazers_count": 123,
+      "updated_at": "2023-03-19T08:45:00Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    },
+    {
+      "name": "repo-2",
+      "description": "An example repository 2",
+      "license": {
+        "name": "GPL-3.0 License"
+      },
+      "forks_count": 56,
+      "stargazers_count": 210,
+      "updated_at": "2023-02-10T15:20:11Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    },
+    {
+      "name": "repo-3",
+      "description": "Community health files for the @GitHub organization",
+      "license": {
+        "name": "MIT License"
+      },
+      "forks_count": 2369,
+      "stargazers_count": 703,
+      "updated_at": "2023-05-15T19:36:34Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    },
+    {
+      "name": "repo-4",
+      "description": "An action to remind users to add alt text on Issues, Pull Requests, and Discussions",
+      "license": {
+        "name": "Apache License 2.0"
+      },
+      "forks_count": 87,
+      "stargazers_count": 432,
+      "updated_at": "2023-04-28T10:15:22Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    },
+    {
+      "name": "repo-5",
+      "description": "An example repository 5",
+      "license": {
+        "name": "Apache License 2.0"
+      },
+      "forks_count": 32,
+      "stargazers_count": 98,
+      "updated_at": "2023-01-05T12:30:45Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    },
+    {
+      "name": "repo-6",
+      "description": "An example repository 6",
+      "license": {
+        "name": "MIT License"
+      },
+      "forks_count": 75,
+      "stargazers_count": 150,
+      "updated_at": "2022-12-18T09:10:55Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    }
+  ],
+  "repos_harry-potter": [
+    {
+      "name": "repo-7",
+      "description": "go to a shower",
+      "license": {
+        "name": "GPL-3.0 License"
+      },
+      "forks_count": 63,
+      "stargazers_count": 180,
+      "updated_at": "2022-11-27T14:25:33Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    },
+    {
+      "name": "repo-8",
+      "description": "An example repository 8",
+      "license": null,
+      "forks_count": 3,
+      "stargazers_count": 10,
+      "updated_at": "2021-11-27T14:25:30Z",
+      "html_url": "https://github.com/chaoting-sun/todo-app-frontend/tree/main"
+    }
+  ]
+}
