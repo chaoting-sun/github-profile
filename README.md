@@ -1,12 +1,43 @@
-#
+# Github Profile
+![Design Preview](./src/design/webpage.png)
 
+## Welcome! 👋
 
+**Github Profile** is a front-end coding challenge in [devChallenges](https://devchallenges.io/) platform which helps improve coding skills by building realistic projects.
 
-# React + Vite
+## The challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Github Profile** has the following function:
 
-Currently, two official plugins are available:
+- Search for any Github account and show the personal profile
+- The personal profile includes an avatar, user information, and repositories
+- Show more or few repositories by clicking the footer buttom
+- Clicking a repository card will navigate to its website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Applied Skills
+
+- HTML5
+- CSS
+- Javascript
+- React
+- Material UI
+- styled components
+- json server
+- Vite
+
+## Run Locally
+
+install the repository and the related libraries.
+
+```bash
+git clone git@github.com:chaoting-sun/github-profile.git
+cd github-profile
+npm install
+```
+
+start the frontend and backend.
+
+```bash
+npm run dev
+npm run server # in another terminal
+```
