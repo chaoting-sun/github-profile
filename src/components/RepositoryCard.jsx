@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { starIconURL, nestingIconURL, chieldAltIconURL } from "../../public/assets";
+import starIconURL from "/assets/Star.svg";
+import forkIconURL from "/assets/Nesting.svg";
+import chieldAltIconURL from "/assets/Chield_alt.svg";
+
 import calculateDayRelativeToToday from "../utils/dayRelativeToToday";
 
 const ContentColor = `
@@ -65,7 +68,7 @@ const RepositoryCard = ({ repo, repoIndex, handleClickCard }) => {
             <TrendValue>{repo.license}</TrendValue>
           </>
         ) : null}
-        <TrendIcon src={nestingIconURL} />
+        <TrendIcon src={forkIconURL} />
         <TrendValue>{repo.forks}</TrendValue>
         <TrendIcon src={starIconURL} />
         <TrendValue>{repo.stars}</TrendValue>

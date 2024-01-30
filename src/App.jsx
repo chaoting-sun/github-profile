@@ -10,7 +10,7 @@ import Repository from "./components/Repository";
 import RepositoryCard from "./components/RepositoryCard";
 import Footer from "./components/Footer";
 import Input from "./components/Input";
-import { wallpaperURL } from "../public/assets";
+import wallpaperURL from "/assets/hero-image-github-profile.png";
 
 import { searchUser, searchRepositories } from "./Services/users";
 
@@ -66,14 +66,12 @@ const App = () => {
   useEffect(() => {
     searchUser(username).then((info) => {
       if (info) {
-        console.log("info:", info);
         const userInfo = {
           followers: info.followers,
           following: info.following,
           location: info.location,
           avatarUrl: info.avatar_url,
         };
-        console.log("userinfo:", userInfo);
         setUserInfo(userInfo);
       }
     });
@@ -99,10 +97,6 @@ const App = () => {
   const handleVisitRepository = (repoIndex) => {
     window.location.href = repositories[repoIndex].htmlUrl;
   };
-
-  // console.log(username);
-  // console.log(userInfo);
-  // console.log(repositories);
 
   const getRepositoryCards = () => {
     const lastIndex = viewAll ? repositories.length : 4;

@@ -6,9 +6,9 @@
   "scripts": {
     "start": "VITE_MODE=production vite",
     "dev": "VITE_MODE=development vite",
-    "build": "vite build",
+    "build": "rm -rf dist && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "preview": "VITE_MODE=production vite preview",
     "server": "json-server -p3001 --watch ./src/mock-backend/db.json"
   },
   "dependencies": {
