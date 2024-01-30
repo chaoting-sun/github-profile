@@ -1,11 +1,16 @@
 :root {
-  --gray-100: #cdd5e0;
-  --gray-200: #4a5567;
-  --gray-300: #364153;
-  --gray-400: #20293a;
-  --gray-500: #111729;
-  --blue-100: #3662e3;
-  --blue-200: #1d1b48;
+  --main-background-color: #20293A;
+
+  --repo-background-color: linear-gradient(90deg, rgb(18, 23, 42) 0%, rgb(28, 27, 71) 100%);
+  --repo-background-color-hover: linear-gradient(90deg, rgba(31,39,73,1) 0%, rgba(42,40,110,1) 100%);
+
+  --title-color: #e7e8ea;
+  --paragraph-color: #8F9BAF;
+
+  --profile-key-color: #4A5567;
+  --profile-value-color: #C5CDD8;
+  
+  --placeholder-color: #515d6f;
 
   --font-family: "Be Vietnam Pro", sans-serif;
   --font-size-title: 1.25rem;
@@ -23,7 +28,7 @@ html,
 #root,
 body {
   width: 100%;
-  background-color: var(--gray-400);
+  background-color: var(--main-background-color);
   margin: 0;
   padding: 0;
 }
@@ -40,4 +45,8 @@ body {
 
 textarea:focus, input:focus {
   outline: none;
+}
+
+::placeholder {
+  color: var(--placeholder-color);
 }

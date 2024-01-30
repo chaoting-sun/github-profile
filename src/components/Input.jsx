@@ -7,7 +7,7 @@ const SearchBox = styled.div`
   height: 60px;
   margin: 40px;
   border-radius: 8px;
-  background-color: var(--gray-400);
+  background-color: var(--main-background-color);
   
   color: #495566;
 
@@ -32,7 +32,7 @@ const InputBox = styled.input`
   font-size: 1.1rem;
   color: white;
 
-  background-color: var(--gray-400);
+  background-color: var(--main-background-color);
 `
 
 const Input = ({ onInputChange }) => {

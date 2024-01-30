@@ -6,7 +6,7 @@ const FooterSection = styled.div`
 
   & span {
     cursor: pointer;
-    color: #94a0b3;
+    color: var(--paragraph-color);
   }
 
   & span:hover {

@@ -5,35 +5,37 @@ import chieldAltIconURL from "/assets/Chield_alt.svg";
 
 import calculateDayRelativeToToday from "../utils/dayRelativeToToday";
 
-const ContentColor = `
-  color: #8F9BAF;
-`;
-
 const Card = styled.div`
   height: fit-content;
   border-radius: 10px;
-  background: linear-gradient(90deg, #12172a 0%, #1c1b47 100%);
+  background: var(--repo-background-color);
   display: inline-block;
   margin: 15px;
 
-  cursor: pointer
+  cursor: pointer;
+
+  &:hover {
+    background: var(--repo-background-color-hover);
+  }
+
+  > * {
+    color: var(--paragraph-color);
+  }
 `;
 
 const CardTitle = styled.div`
-  color: #c1c9d5;
+  color: var(--title-color);
   margin: 20px 15px 10px 20px;
   font-weight: 500;
   font-size: 1.1rem;
 `;
 
 const CardDescription = styled.div`
-  ${ContentColor}
   margin: 10px 20px;
   font-size: 0.9rem;
 `;
 
 const CardTrend = styled.div`
-  ${ContentColor}
   margin: 10px 20px;
   display: flex;
   justify-content: flex-start;
@@ -41,17 +43,14 @@ const CardTrend = styled.div`
 `;
 
 const TrendIcon = styled.img`
-  ${ContentColor}
   margin-right: 6px;
 `;
 
 const TrendValue = styled.span`
-  ${ContentColor}
   margin-right: 11px;
 `;
 
 const UpdatedTime = styled.div`
-  ${ContentColor}
   font-size: 0.7rem;
   margin-left: 11px;
 `;

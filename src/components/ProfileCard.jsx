@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Item = styled.div`
   background-color: #111629;
   border-radius: 10px;
-  // margin: 10px;
   padding: 0.6rem 1rem;
   gap: 0.8rem;
 
@@ -13,18 +12,18 @@ const Item = styled.div`
 `;
 
 const Name = styled.p`
-  color: #4A5567;
+  color: var(--profile-key-color);
   margin: 0;
 `;
 
 const Divider = styled.div`
-  background-color: #485265;
+  background-color: var(--profile-key-color);
   width: 1px;
   height: 2.7rem;
 `;
 
 const Value = styled.p`
-  color: #C5CDD8;
+  color: var(--title-color);
   height: fit-content;
   margin: 0;
 `;

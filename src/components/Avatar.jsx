@@ -3,7 +3,7 @@ import styled from "styled-components";
 const PhotoContainer = styled.div`
   width: 120px;
   height: 120px;
-  border: 23px solid var(--gray-400);
+  border: 23px solid var(--main-background-color);
   border-radius: 8px;
   display: flex;
   justify-content: center;

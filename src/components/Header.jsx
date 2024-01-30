@@ -8,12 +8,12 @@ const HeaderSection = styled.div`
     margin: 15px 12px 10px 12px;
     font-size: 2rem;
     font-weight: 500;
-    color: white;
+    color: var(--title-color);
   }
 
   & p {
     margin: 10px 12px 10px 12px;
-    color: #8f9baf;
+    color: var(--paragraph-color);
   }
 `;
 
