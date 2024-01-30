@@ -24,8 +24,9 @@ const SearchBox = styled.div`
 `
 
 const InputBox = styled.input`
+  display: block;
   height: 80%;
-  width: 60%;
+  width: calc(100% - 25px);
   border: 0;
 
   font-size: 1.1rem;
