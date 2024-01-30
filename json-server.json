@@ -1,9 +1,0 @@
-{
-  "port": 3001,
-  "watch": true,
-  "static": "./public", 
-  "routes": "./src/mock-backend/routes.json",
-  "read-only": false,
-  "no-cors": false,
-  "no-gzip": false
-}
