@@ -11,7 +11,8 @@ const WallImg = styled.img`
   object-fit: cover;
 `;
 
-const Wallpaper = ({ wallpaperURL }) => {
+const Wallpaper = ({ wallpaperURL, test }) => {
+  console.log(test);
   return (
     <WallImgContainer>
       <WallImg src={wallpaperURL} />
