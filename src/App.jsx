@@ -136,7 +136,7 @@ const App = () => {
             ></ProfileCard>
             <ProfileCard
               itemKey="Following"
-              itemValue={userInfo.followers}
+              itemValue={userInfo.following}
             ></ProfileCard>
             <ProfileCard
               itemKey="Location"
